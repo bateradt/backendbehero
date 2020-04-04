@@ -1,0 +1,11 @@
+config:
+  target: 'http://localhost:3333'
+  phases:
+    - duration: 60
+      arrivalRate: 20
+scenarios:
+  -
+    name: 'Listagem de Ongs'
+    flow:
+    - get:
+        url: "/ongs"
